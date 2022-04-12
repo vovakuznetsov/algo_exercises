@@ -36,6 +36,7 @@ def solution(scores):
             if scores >= max_value:
                 if i < min_idx:
                     res = name
+                    min_idx = i
                 break
     return res
 
