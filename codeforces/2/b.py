@@ -13,7 +13,6 @@ def simple(n, k):
 def dp(matrix, k):
     # таблица с динамическими коэффициентами
     cf = [[simple(item, k) for item in line] for line in matrix]
-    print(k, cf)
     # первая строка и столбец
     for i in range(1, len(matrix)):
         cf[i][0] += cf[i-1][0]
